@@ -10,7 +10,7 @@ const PORT = 3001;
 app.use(cors());
 app.use(bodyParser.json());
 
-app.post("/subscribe", async (req, res) => {
+app.post("/", async (req, res) => {
   const { email } = req.body;
 
   if (!email) {
